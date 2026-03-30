@@ -1,128 +1,62 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #0d1117;
-    color: #c9d1d9;
-    scroll-behavior: smooth;
 }
 
 header {
-    background-color: #161b22;
-    padding: 50px 20px;
-    text-align: center;
-    border-bottom: 1px solid #30363d;
-    position: relative;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.6rem;
-    color: #58a6ff;
-    letter-spacing: -0.5px;
-}
-
-header img {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    width: 70px;
-    height: auto;
-    border-radius: 4px;
-}
-
-nav {
-    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
 }
 
 nav a {
-    color: #8b949e;
+    margin-left: 15px;
     text-decoration: none;
-    font-weight: 500;
-    margin: 0 8px;
-    padding: 5px 10px;
-    transition: 0.2s;
-}
-
-nav a:hover {
-    color: #58a6ff;
-    background-color: #21262d;
-    border-radius: 6px;
+    color: #000;
 }
 
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-section {
-    margin-bottom: 70px;
-}
-
-h2 {
-    font-size: 1.3rem;
-    color: #f0f6fc;
-    border-bottom: 1px solid #30363d;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-#habilidades ul {
-    list-style: none;
-    padding: 0;
-}
-
-#habilidades li {
-    display: inline-block;
-    background-color: #21262d;
-    border: 1px solid #30363d;
-    padding: 6px 12px;
-    margin: 4px;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    color: #c9d1d9;
-}
-
-article {
-    background-color: #161b22;
-    border: 1px solid #30363d;
+    max-width: 900px;
+    margin: 40px auto;
     padding: 20px;
-    border-radius: 8px;
 }
 
-article h3 {
-    margin-top: 0;
-    color: #58a6ff;
+#inicio {
+    display: flex;
+    gap: 40px;
 }
 
-article a {
-    color: #1f6feb;
-    text-decoration: none;
-    font-weight: bold;
+.texto {
+    flex: 2;
 }
 
-#contacto a {
-    color: #58a6ff;
-    text-decoration: none;
+.foto {
+    flex: 1;
 }
 
-#contacto a:hover {
-    text-decoration: underline;
+.foto img {
+    width: 100%;
+}
+
+h1 {
+    color: red;
+}
+
+h2, h3 {
+    color: black;
+}
+
+p, li, a {
+    color: #00aaff;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 40px 0;
 }
 
 footer {
     text-align: center;
-    padding: 40px;
-    font-size: 0.8rem;
-    color: #484f58;
 }
